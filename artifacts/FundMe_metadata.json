@@ -1,34 +1,37 @@
 {
 	"compiler": {
-		"version": "0.8.22+commit.4fc1097e"
+		"version": "0.8.23+commit.f704f362"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
 				"inputs": [],
-				"name": "fund",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getConversionRate",
-				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
+				"type": "constructor"
 			},
 			{
 				"inputs": [],
-				"name": "getPrice",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "MINIMUM_USD",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "getVersion",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "addressToAmountFunded",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -41,12 +44,38 @@
 			},
 			{
 				"inputs": [],
-				"name": "minUSD",
-				"outputs": [
+				"name": "fund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"name": "funders",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "i_owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -96,19 +125,19 @@
 			]
 		},
 		"FundMe.sol": {
-			"keccak256": "0x7f3e43917c81370a4ffbc5d1e777922092cb60209081a8df9287acbe2b98b5ac",
+			"keccak256": "0x5d0d0308c0062c4393741d12e70e04eebb640b132cb9b90edf2dc9341b2f629b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c33d95506088db487e6ef7a8972d60e9e5ea418669a492428dcfd6b8ef2f3151",
-				"dweb:/ipfs/QmS6WuagC39vfJuQKSt5fQEnttQ1nackHESy8Jra4x3x8W"
+				"bzz-raw://707fe34eff21cb9a99cad7fdf042d3053b3a62362da5301fd40849aa5779f56e",
+				"dweb:/ipfs/QmZvLSkDdb3rkrywLVGSuXxMJibFJsAsX6GJFMxoZM8shG"
 			]
 		},
 		"PriceConverter.sol": {
-			"keccak256": "0x1767acc42285f1669e4f235fe806c9f0f15364938afb0f5888ac8e2b42551643",
+			"keccak256": "0xbe8d921012452635ff8efdb817ed1009078bd441013f213a4b5f7c1ab0d83ea0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3951e0342975bfc81c38444ccec4a18e72e7d7922a5c331c84229ba15984aa68",
-				"dweb:/ipfs/QmPuUMfsTeKSnieKCDUDtuUyiEpLJBmDf12QKBSbFFovuZ"
+				"bzz-raw://d36e1d976a26e1ae7311760e4bb4933e6e75a10368248d662a9a820fdbb8089b",
+				"dweb:/ipfs/QmfTFzbo6GNiUk7mcxEsQziaXxd7GHNB7oZ1jkXrLV5vDq"
 			]
 		}
 	},
